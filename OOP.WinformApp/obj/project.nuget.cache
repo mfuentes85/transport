@@ -1,0 +1,12 @@
+{
+  "version": 2,
+  "dgSpecHash": "+oYXUGJupE4=",
+  "success": true,
+  "projectFilePath": "C:\\NetAcademy\\c#\\POO (1)\\WinForm\\OOP.WinformApp\\OOP.WinformApp.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Administrador\\.nuget\\packages\\microsoft.win32.systemevents\\6.0.0\\microsoft.win32.systemevents.6.0.0.nupkg.sha512",
+    "C:\\Users\\Administrador\\.nuget\\packages\\system.drawing.common\\6.0.0\\system.drawing.common.6.0.0.nupkg.sha512",
+    "C:\\Users\\Administrador\\.nuget\\packages\\system.windows.extensions\\6.0.0\\system.windows.extensions.6.0.0.nupkg.sha512"
+  ],
+  "logs": []
+}

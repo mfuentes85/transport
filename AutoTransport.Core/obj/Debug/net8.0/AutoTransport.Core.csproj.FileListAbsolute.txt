@@ -1,0 +1,12 @@
+C:\NetAcademy\c#\POO (1)\WinForm\AutoTransport.Core\bin\Debug\net8.0\AutoTransport.Core.deps.json
+C:\NetAcademy\c#\POO (1)\WinForm\AutoTransport.Core\bin\Debug\net8.0\AutoTransport.Core.dll
+C:\NetAcademy\c#\POO (1)\WinForm\AutoTransport.Core\bin\Debug\net8.0\AutoTransport.Core.pdb
+C:\NetAcademy\c#\POO (1)\WinForm\AutoTransport.Core\obj\Debug\net8.0\AutoTransport.Core.GeneratedMSBuildEditorConfig.editorconfig
+C:\NetAcademy\c#\POO (1)\WinForm\AutoTransport.Core\obj\Debug\net8.0\AutoTransport.Core.AssemblyInfoInputs.cache
+C:\NetAcademy\c#\POO (1)\WinForm\AutoTransport.Core\obj\Debug\net8.0\AutoTransport.Core.AssemblyInfo.cs
+C:\NetAcademy\c#\POO (1)\WinForm\AutoTransport.Core\obj\Debug\net8.0\AutoTransport.Core.csproj.CoreCompileInputs.cache
+C:\NetAcademy\c#\POO (1)\WinForm\AutoTransport.Core\obj\Debug\net8.0\AutoTransport.Core.dll
+C:\NetAcademy\c#\POO (1)\WinForm\AutoTransport.Core\obj\Debug\net8.0\refint\AutoTransport.Core.dll
+C:\NetAcademy\c#\POO (1)\WinForm\AutoTransport.Core\obj\Debug\net8.0\AutoTransport.Core.pdb
+C:\NetAcademy\c#\POO (1)\WinForm\AutoTransport.Core\obj\Debug\net8.0\ref\AutoTransport.Core.dll
+C:\NetAcademy\c#\POO (1)\WinForm\AutoTransport.Core\obj\Debug\net8.0\AutoTransport.Core.csproj.AssemblyReference.cache

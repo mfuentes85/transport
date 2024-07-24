@@ -1,0 +1,8 @@
+C:\NetAcademy\c#\POO (1)\WinForm\OOP.WinformApp\obj\Release\net8.0-windows\OOP.WinformApp.Form1.resources
+C:\NetAcademy\c#\POO (1)\WinForm\OOP.WinformApp\obj\Release\net8.0-windows\OOP.WinformApp.Properties.Resources.resources
+C:\NetAcademy\c#\POO (1)\WinForm\OOP.WinformApp\obj\Release\net8.0-windows\OOP.WinformApp.RechargeGas.resources
+C:\NetAcademy\c#\POO (1)\WinForm\OOP.WinformApp\obj\Release\net8.0-windows\OOP.WinformApp.csproj.GenerateResource.cache
+C:\NetAcademy\c#\POO (1)\WinForm\OOP.WinformApp\obj\Release\net8.0-windows\OOP.WinformApp.GeneratedMSBuildEditorConfig.editorconfig
+C:\NetAcademy\c#\POO (1)\WinForm\OOP.WinformApp\obj\Release\net8.0-windows\OOP.WinformApp.AssemblyInfoInputs.cache
+C:\NetAcademy\c#\POO (1)\WinForm\OOP.WinformApp\obj\Release\net8.0-windows\OOP.WinformApp.AssemblyInfo.cs
+C:\NetAcademy\c#\POO (1)\WinForm\OOP.WinformApp\obj\Release\net8.0-windows\OOP.WinformApp.csproj.CoreCompileInputs.cache

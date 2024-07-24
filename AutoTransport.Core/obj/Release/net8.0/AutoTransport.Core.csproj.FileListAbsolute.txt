@@ -1,0 +1,4 @@
+C:\NetAcademy\c#\POO (1)\WinForm\AutoTransport.Core\obj\Release\net8.0\AutoTransport.Core.GeneratedMSBuildEditorConfig.editorconfig
+C:\NetAcademy\c#\POO (1)\WinForm\AutoTransport.Core\obj\Release\net8.0\AutoTransport.Core.AssemblyInfoInputs.cache
+C:\NetAcademy\c#\POO (1)\WinForm\AutoTransport.Core\obj\Release\net8.0\AutoTransport.Core.AssemblyInfo.cs
+C:\NetAcademy\c#\POO (1)\WinForm\AutoTransport.Core\obj\Release\net8.0\AutoTransport.Core.csproj.CoreCompileInputs.cache
