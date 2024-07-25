@@ -10,3 +10,4 @@ C:\NetAcademy\c#\POO (1)\WinForm\AutoTransport.Core\obj\Debug\net8.0\refint\Auto
 C:\NetAcademy\c#\POO (1)\WinForm\AutoTransport.Core\obj\Debug\net8.0\AutoTransport.Core.pdb
 C:\NetAcademy\c#\POO (1)\WinForm\AutoTransport.Core\obj\Debug\net8.0\ref\AutoTransport.Core.dll
 C:\NetAcademy\c#\POO (1)\WinForm\AutoTransport.Core\obj\Debug\net8.0\AutoTransport.Core.csproj.AssemblyReference.cache
+C:\NetAcademy\c#\POO (1)\WinForm\AutoTransport.Core\obj\Debug\net8.0\AutoTransport.Core.sourcelink.json

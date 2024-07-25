@@ -25,9 +25,11 @@ namespace AutoTransport.Core
         /// <summary>
         /// Cantidad de kilometros que recorre por litro
         /// </summary>
-        public int Performance { get; set; }
+        public double Performance { get; set; }
 
         protected string SoundFileName { get; set; }
+
+        public event EventHandler<string> OnConsoleLog;
 
 
 
@@ -42,13 +44,9 @@ namespace AutoTransport.Core
         }
 
         public void Run(double kilometer)
-
-
-        {
+            {
             if (Performance == 0)
             {
-
-
                 // Console.WriteLine($"{Name} ** No se puede arrancar, cilindros inválidos: {  Cilinders}");
             }
             else
@@ -56,33 +54,40 @@ namespace AutoTransport.Core
 
                 if (Lts > 0)
                 {
-                    Console.WriteLine($"{Name} ** Incia a correr con {Lts} litros");
+                    OnConsoleLog(this, $"{Name} ** Incia a correr con {Lts} litros");
+                    //Console.WriteLine($"{Name} ** Incia a correr con {Lts} litros");
                     //Console.WriteLine($"{Name} ** Este auto tiene {Cilinders} cilindros");
-                    Console.WriteLine($"{Name} ** Y almacena {LtsCapacity} litros de gasolina");
+                   
+                     OnConsoleLog(this, $"{Name} ** Y almacena {LtsCapacity} litros de gasolina");
+                    //Console.WriteLine($"{Name} ** Y almacena {LtsCapacity} litros de gasolina");
+
                     IsOn = true;
 
                     double consumo = (kilometer / Performance);
 
-                    if ((consumo <= Lts))
+                    if ((consumo <= Lts))  // Si alcanza el combustible
                     {
                         Lts = Lts - consumo;
 
-                        Console.WriteLine($"{Name} **Se recorrieron {kilometer} kilómetros y restan {Lts} litros de gasolina");
+                        OnConsoleLog(this, $"{Name} **Se recorrieron {kilometer} kilómetros y restan {Lts} litros de gasolina");
+
+                        //Console.WriteLine($"{Name} **Se recorrieron {kilometer} kilómetros y restan {Lts} litros de gasolina");
 
                     }
                     else
                     {
                         double KmRecorridos = Performance * Lts;
 
-
-                        Console.WriteLine($"{Name} **Se recorrieron {KmRecorridos} kilometros y se agotó la gasolina");
+                        OnConsoleLog(this, $"{Name} **Se recorrieron {KmRecorridos} kilometros y se agotó la gasolina");
+                        //Console.WriteLine($"{Name} **Se recorrieron {KmRecorridos} kilometros y se agotó la gasolina");
 
                     }
 
                 }
                 else
                 {
-                    Console.WriteLine($"{Name} ** No se puede iniciar porque el tanque está vacío");
+                    OnConsoleLog(this, $"{Name} ** No se puede iniciar porque el tanque está vacío");
+                    //Console.WriteLine($"{Name} ** No se puede iniciar porque el tanque está vacío");
                     IsOn = false;
 
                 }
@@ -90,7 +95,10 @@ namespace AutoTransport.Core
 
         }
 
-
+        protected void ConsoleLog (string text)
+        {
+            OnConsoleLog (this, text);
+        }
 
     }
 

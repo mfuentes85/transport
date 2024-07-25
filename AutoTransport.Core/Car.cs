@@ -32,7 +32,11 @@ namespace AutoTransport.Core
                 case 12:
                     Performance = 6; break;
 
-                default: Console.WriteLine($"{Name} ** Cantidad de cilindros inválida"); break;
+                default:
+
+                    ConsoleLog($"{Name} ** Cantidad de cilindros inválida");
+                        //Console.WriteLine($"{Name} ** Cantidad de cilindros inválida"); break;
+                    break;                        
             }
         }
 

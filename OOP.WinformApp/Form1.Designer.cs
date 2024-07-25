@@ -31,15 +31,18 @@
             buttonCar = new Button();
             button2 = new Button();
             carGroupBox = new GroupBox();
+            resultsLabel = new Label();
+            carRunButton = new Button();
+            carResultTextBox = new TextBox();
             onOffCarButton = new Button();
             carLtsLabel = new Label();
             carGasButton = new Button();
             groupBox2 = new GroupBox();
+            busRunButton = new Button();
+            textBox2 = new TextBox();
             onOffBusButton = new Button();
             busLtsLabel = new Label();
             BusDiselButton = new Button();
-            textBox1 = new TextBox();
-            textBox2 = new TextBox();
             carGroupBox.SuspendLayout();
             groupBox2.SuspendLayout();
             SuspendLayout();
@@ -66,28 +69,58 @@
             // 
             // carGroupBox
             // 
-            carGroupBox.Controls.Add(textBox1);
+            carGroupBox.Controls.Add(resultsLabel);
+            carGroupBox.Controls.Add(carRunButton);
+            carGroupBox.Controls.Add(carResultTextBox);
             carGroupBox.Controls.Add(onOffCarButton);
             carGroupBox.Controls.Add(carLtsLabel);
             carGroupBox.Controls.Add(carGasButton);
             carGroupBox.Controls.Add(buttonCar);
             carGroupBox.Location = new Point(67, 52);
             carGroupBox.Name = "carGroupBox";
-            carGroupBox.Size = new Size(230, 406);
+            carGroupBox.Size = new Size(230, 448);
             carGroupBox.TabIndex = 2;
             carGroupBox.TabStop = false;
             carGroupBox.Text = "groupBox1";
-            carGroupBox.Enter += CarGroupBox_Enter;
+            // 
+            // resultsLabel
+            // 
+            resultsLabel.AutoSize = true;
+            resultsLabel.Location = new Point(21, 296);
+            resultsLabel.Name = "resultsLabel";
+            resultsLabel.Size = new Size(67, 15);
+            resultsLabel.TabIndex = 4;
+            resultsLabel.Text = " Resultados";
+            resultsLabel.Click += label1_Click;
+            // 
+            // carRunButton
+            // 
+            carRunButton.Location = new Point(122, 258);
+            carRunButton.Name = "carRunButton";
+            carRunButton.Size = new Size(75, 23);
+            carRunButton.TabIndex = 9;
+            carRunButton.Text = "Correr";
+            carRunButton.UseVisualStyleBackColor = true;
+            carRunButton.Click += carRunButton_Click;
+            // 
+            // carResultTextBox
+            // 
+            carResultTextBox.Location = new Point(14, 313);
+            carResultTextBox.Multiline = true;
+            carResultTextBox.Name = "carResultTextBox";
+            carResultTextBox.Size = new Size(203, 129);
+            carResultTextBox.TabIndex = 7;
+            carResultTextBox.TextChanged += carResultTextBox_TextChanged;
             // 
             // onOffCarButton
             // 
-            onOffCarButton.Location = new Point(95, 284);
+            onOffCarButton.Location = new Point(21, 260);
             onOffCarButton.Name = "onOffCarButton";
             onOffCarButton.Size = new Size(75, 23);
             onOffCarButton.TabIndex = 5;
             onOffCarButton.Text = "button1";
             onOffCarButton.UseVisualStyleBackColor = true;
-            onOffCarButton.Click += button1_Click_2;
+            onOffCarButton.Click += onOffCarButton_Click;
             // 
             // carLtsLabel
             // 
@@ -98,7 +131,6 @@
             carLtsLabel.Size = new Size(52, 21);
             carLtsLabel.TabIndex = 4;
             carLtsLabel.Text = "label1";
-            carLtsLabel.Click += label1_Click;
             // 
             // carGasButton
             // 
@@ -113,21 +145,41 @@
             // 
             // groupBox2
             // 
+            groupBox2.Controls.Add(busRunButton);
             groupBox2.Controls.Add(textBox2);
             groupBox2.Controls.Add(onOffBusButton);
             groupBox2.Controls.Add(busLtsLabel);
             groupBox2.Controls.Add(BusDiselButton);
             groupBox2.Controls.Add(button2);
-            groupBox2.Location = new Point(337, 52);
+            groupBox2.Location = new Point(336, 52);
             groupBox2.Name = "groupBox2";
-            groupBox2.Size = new Size(214, 406);
+            groupBox2.Size = new Size(230, 448);
             groupBox2.TabIndex = 3;
             groupBox2.TabStop = false;
             groupBox2.Text = "groupBox2";
             // 
+            // busRunButton
+            // 
+            busRunButton.Location = new Point(117, 258);
+            busRunButton.Name = "busRunButton";
+            busRunButton.RightToLeft = RightToLeft.Yes;
+            busRunButton.Size = new Size(75, 23);
+            busRunButton.TabIndex = 9;
+            busRunButton.Text = "Correr";
+            busRunButton.UseVisualStyleBackColor = true;
+            busRunButton.Click += busRunButton_Click;
+            // 
+            // textBox2
+            // 
+            textBox2.Location = new Point(11, 313);
+            textBox2.Multiline = true;
+            textBox2.Name = "textBox2";
+            textBox2.Size = new Size(203, 129);
+            textBox2.TabIndex = 8;
+            // 
             // onOffBusButton
             // 
-            onOffBusButton.Location = new Point(59, 284);
+            onOffBusButton.Location = new Point(15, 260);
             onOffBusButton.Name = "onOffBusButton";
             onOffBusButton.Size = new Size(75, 23);
             onOffBusButton.TabIndex = 6;
@@ -144,44 +196,28 @@
             busLtsLabel.Size = new Size(52, 21);
             busLtsLabel.TabIndex = 3;
             busLtsLabel.Text = "label1";
-            busLtsLabel.Click += busLtsLabel_Click;
             // 
             // BusDiselButton
             // 
             BusDiselButton.BackgroundImageLayout = ImageLayout.Center;
             BusDiselButton.Image = Properties.Resources.gas_mini;
-            BusDiselButton.Location = new Point(6, 129);
+            BusDiselButton.Location = new Point(15, 129);
             BusDiselButton.Name = "BusDiselButton";
             BusDiselButton.Size = new Size(128, 123);
             BusDiselButton.TabIndex = 2;
             BusDiselButton.UseVisualStyleBackColor = true;
             BusDiselButton.Click += button3_Click;
             // 
-            // textBox1
-            // 
-            textBox1.Location = new Point(21, 340);
-            textBox1.Name = "textBox1";
-            textBox1.Size = new Size(186, 23);
-            textBox1.TabIndex = 7;
-            // 
-            // textBox2
-            // 
-            textBox2.Location = new Point(15, 340);
-            textBox2.Name = "textBox2";
-            textBox2.Size = new Size(177, 23);
-            textBox2.TabIndex = 8;
-            // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(620, 512);
+            ClientSize = new Size(633, 512);
             Controls.Add(groupBox2);
             Controls.Add(carGroupBox);
             Name = "Form1";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "Form1";
-            Load += Form1_Load;
             carGroupBox.ResumeLayout(false);
             carGroupBox.PerformLayout();
             groupBox2.ResumeLayout(false);
@@ -201,7 +237,10 @@
         private Label busLtsLabel;
         private Button onOffCarButton;
         private Button onOffBusButton;
-        private TextBox textBox1;
+        private TextBox carResultTextBox;
         private TextBox textBox2;
+        private Button carRunButton;
+        private Button busRunButton;
+        private Label resultsLabel;
     }
 }

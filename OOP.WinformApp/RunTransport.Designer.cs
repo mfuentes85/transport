@@ -68,8 +68,12 @@
             Controls.Add(startButton);
             Controls.Add(label1);
             Controls.Add(distanceTextBox);
+            MaximizeBox = false;
+            MaximumSize = new Size(321, 191);
+            MinimizeBox = false;
             Name = "RunTransport";
-            Text = "RunTransport";
+            StartPosition = FormStartPosition.CenterScreen;
+            Text = "Correr vehículo";
             ResumeLayout(false);
             PerformLayout();
         }

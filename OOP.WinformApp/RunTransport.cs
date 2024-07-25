@@ -29,9 +29,7 @@ namespace OOP.WinformApp
         private void startButton_Click(object sender, EventArgs e)
         {
             int distance= int.Parse(distanceTextBox.Text);
-            
-            _transport .Run(distance); 
-             
+            _transport.Run(distance); 
             Close();
         }
     }

@@ -38,14 +38,14 @@
             // 
             trackBar1.Location = new Point(25, 34);
             trackBar1.Name = "trackBar1";
-            trackBar1.Size = new Size(356, 45);
+            trackBar1.Size = new Size(284, 45);
             trackBar1.TabIndex = 0;
             trackBar1.Scroll += trackBar1_Scroll;
             trackBar1.ValueChanged += trackBar1_ValueChanged;
             // 
             // saveButton
             // 
-            saveButton.Location = new Point(162, 133);
+            saveButton.Location = new Point(143, 116);
             saveButton.Name = "saveButton";
             saveButton.Size = new Size(75, 23);
             saveButton.TabIndex = 1;
@@ -56,7 +56,7 @@
             // ltsLabel
             // 
             ltsLabel.AutoSize = true;
-            ltsLabel.Location = new Point(183, 93);
+            ltsLabel.Location = new Point(162, 82);
             ltsLabel.Name = "ltsLabel";
             ltsLabel.Size = new Size(38, 15);
             ltsLabel.TabIndex = 2;
@@ -68,11 +68,13 @@
             AcceptButton = saveButton;
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(406, 168);
+            ClientSize = new Size(346, 170);
             Controls.Add(ltsLabel);
             Controls.Add(saveButton);
             Controls.Add(trackBar1);
             MaximizeBox = false;
+            MaximumSize = new Size(362, 209);
+            MinimizeBox = false;
             Name = "RechargeGas";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "Recargar Combustible";

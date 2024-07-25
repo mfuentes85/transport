@@ -20,3 +20,5 @@ C:\NetAcademy\c#\POO (1)\WinForm\OOP.WinformApp\obj\Debug\net8.0-windows\OOP.Win
 C:\NetAcademy\c#\POO (1)\WinForm\OOP.WinformApp\obj\Debug\net8.0-windows\OOP.Winf.78237FCD.Up2Date
 C:\NetAcademy\c#\POO (1)\WinForm\OOP.WinformApp\obj\Debug\net8.0-windows\OOP.WinformApp.Properties.Resources.resources
 C:\NetAcademy\c#\POO (1)\WinForm\OOP.WinformApp\obj\Debug\net8.0-windows\OOP.WinformApp.RechargeGas.resources
+C:\NetAcademy\c#\POO (1)\WinForm\OOP.WinformApp\obj\Debug\net8.0-windows\OOP.WinformApp.RunTransport.resources
+C:\NetAcademy\c#\POO (1)\WinForm\OOP.WinformApp\obj\Debug\net8.0-windows\OOP.WinformApp.sourcelink.json
