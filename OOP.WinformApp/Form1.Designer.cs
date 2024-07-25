@@ -39,7 +39,7 @@
             carGasButton = new Button();
             groupBox2 = new GroupBox();
             busRunButton = new Button();
-            textBox2 = new TextBox();
+            busResultsTextBox = new TextBox();
             onOffBusButton = new Button();
             busLtsLabel = new Label();
             BusDiselButton = new Button();
@@ -76,7 +76,7 @@
             carGroupBox.Controls.Add(carLtsLabel);
             carGroupBox.Controls.Add(carGasButton);
             carGroupBox.Controls.Add(buttonCar);
-            carGroupBox.Location = new Point(67, 52);
+            carGroupBox.Location = new Point(70, 23);
             carGroupBox.Name = "carGroupBox";
             carGroupBox.Size = new Size(230, 448);
             carGroupBox.TabIndex = 2;
@@ -95,7 +95,7 @@
             // 
             // carRunButton
             // 
-            carRunButton.Location = new Point(122, 258);
+            carRunButton.Location = new Point(142, 258);
             carRunButton.Name = "carRunButton";
             carRunButton.Size = new Size(75, 23);
             carRunButton.TabIndex = 9;
@@ -146,12 +146,12 @@
             // groupBox2
             // 
             groupBox2.Controls.Add(busRunButton);
-            groupBox2.Controls.Add(textBox2);
+            groupBox2.Controls.Add(busResultsTextBox);
             groupBox2.Controls.Add(onOffBusButton);
             groupBox2.Controls.Add(busLtsLabel);
             groupBox2.Controls.Add(BusDiselButton);
             groupBox2.Controls.Add(button2);
-            groupBox2.Location = new Point(336, 52);
+            groupBox2.Location = new Point(339, 23);
             groupBox2.Name = "groupBox2";
             groupBox2.Size = new Size(230, 448);
             groupBox2.TabIndex = 3;
@@ -160,7 +160,7 @@
             // 
             // busRunButton
             // 
-            busRunButton.Location = new Point(117, 258);
+            busRunButton.Location = new Point(139, 258);
             busRunButton.Name = "busRunButton";
             busRunButton.RightToLeft = RightToLeft.Yes;
             busRunButton.Size = new Size(75, 23);
@@ -169,13 +169,14 @@
             busRunButton.UseVisualStyleBackColor = true;
             busRunButton.Click += busRunButton_Click;
             // 
-            // textBox2
+            // busResultsTextBox
             // 
-            textBox2.Location = new Point(11, 313);
-            textBox2.Multiline = true;
-            textBox2.Name = "textBox2";
-            textBox2.Size = new Size(203, 129);
-            textBox2.TabIndex = 8;
+            busResultsTextBox.Location = new Point(11, 313);
+            busResultsTextBox.Multiline = true;
+            busResultsTextBox.Name = "busResultsTextBox";
+            busResultsTextBox.Size = new Size(203, 129);
+            busResultsTextBox.TabIndex = 8;
+            busResultsTextBox.TextChanged += busResultsTextBox_TextChanged;
             // 
             // onOffBusButton
             // 
@@ -191,7 +192,7 @@
             // 
             busLtsLabel.AutoSize = true;
             busLtsLabel.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            busLtsLabel.Location = new Point(140, 178);
+            busLtsLabel.Location = new Point(144, 178);
             busLtsLabel.Name = "busLtsLabel";
             busLtsLabel.Size = new Size(52, 21);
             busLtsLabel.TabIndex = 3;
@@ -212,9 +213,12 @@
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(633, 512);
+            ClientSize = new Size(633, 497);
             Controls.Add(groupBox2);
             Controls.Add(carGroupBox);
+            MaximizeBox = false;
+            MaximumSize = new Size(649, 551);
+            MinimizeBox = false;
             Name = "Form1";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "Form1";
@@ -238,7 +242,7 @@
         private Button onOffCarButton;
         private Button onOffBusButton;
         private TextBox carResultTextBox;
-        private TextBox textBox2;
+        private TextBox busResultsTextBox;
         private Button carRunButton;
         private Button busRunButton;
         private Label resultsLabel;

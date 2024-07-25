@@ -19,6 +19,8 @@ namespace OOP.WinformApp
             bus = new Bus(90, "Mercedes Benz");
 
             car.OnConsoleLog += Car_OnConsoleLog;
+            bus.OnConsoleLog += Bus_OnConsoleLog;
+
 
             carGroupBox.Text = car.Name;
             groupBox2.Text = bus.Name;
@@ -50,6 +52,11 @@ namespace OOP.WinformApp
             }
 
 
+        }
+
+        private void Bus_OnConsoleLog(object? sender, string e)
+        {
+            busResultsTextBox.Text = busResultsTextBox.Text + "\n" + e;
         }
 
         private void Car_OnConsoleLog(object? sender, string e)
@@ -122,7 +129,6 @@ namespace OOP.WinformApp
 
         private void onOffBusButton_Click(object sender, EventArgs e)
         {
-
             if (bus.IsOn)
             {
                 bus.IsOn = false;
@@ -135,17 +141,12 @@ namespace OOP.WinformApp
                 bus.IsOn = true;
                 onOffBusButton.Text = "Apagar";
                 busRunButton.Enabled = true;
-
-
             }
-
         }
-
         private void carRunButton_Click(object sender, EventArgs e)
         {
             RunTransport runTransport = new RunTransport(car);
             runTransport.ShowDialog();
-
         }
 
         private void label1_Click(object sender, EventArgs e)
@@ -162,6 +163,16 @@ namespace OOP.WinformApp
         {
             RunTransport runTransport = new RunTransport(bus);
             runTransport.ShowDialog();
+        }
+
+        private void textBox2_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void busResultsTextBox_TextChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }

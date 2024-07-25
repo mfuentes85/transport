@@ -16,7 +16,7 @@ namespace AutoTransport.Core
                 LtsCapacity = capacity;
                 Lts = 0;
                 IsOn = false;
-            Name = name;
+                Name = name;
             Performance = 8;
                 SoundFileName = "bocinaBus.wav";
 

@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("AutoTransport.Core")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+7adb3b02a4f614e8121229773b7e531149e98f71")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+1c676b3107e6a214ce3e5fbd61f64eee5c928c43")]
 [assembly: System.Reflection.AssemblyProductAttribute("AutoTransport.Core")]
 [assembly: System.Reflection.AssemblyTitleAttribute("AutoTransport.Core")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
